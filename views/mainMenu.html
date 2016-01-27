@@ -1,0 +1,10 @@
+<section>
+    <ul class="mainMenu" ng-hide="clicked">
+        <li ng-repeat="item in menuItems">
+            <a href="#/{{item.name}}">
+                <image ng-src="images/{{item.image}}.png"></image>
+                {{item.name}}
+            </a>
+        </li>
+    </ul>
+</section>

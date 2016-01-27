@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 1%;
+}
+
+header > button {
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 1.5em;
+    top: 0;
+}
+
+label.pageTitle {
+    display: inline-block;
+    width: calc(100% - 5em);
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+main {
+    position: relative;
+    top: 2.5em;
+    z-index: -1;
+}
+
+
+footer {
+    position: fixed;
+    /*bottom: -3em;*/
+    bottom: 0;
+    width: 100%;
+}
+
+footer > button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+
+}
+input {
+    font-size: 1em;
+    width: 100%;
+}
+
+header, footer {
+    background-color: white;
+}
+
+.horizontal-style {
+    display: table;
+    width: 100%
+}
+.horizontal-style li {
+    display: table-cell;
+    padding: 2px;
+}
+.horizontal-style button {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    background: #dfdfdf;
+}
+
+footer button {
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1.5em;
+}
+
+.mainMenu {
+    padding-left: 1em;
+    background-color: #dfdfdf;
+    width: 70%;
+    border-radius: 0 6px 10px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.mainMenu  li:first-child{
+    padding-top: 1em;
+}
+
+.mainMenu li {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+ul li img {
+    vertical-align: middle;
+}

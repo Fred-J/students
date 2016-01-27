@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="appModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <base href="http://localhost:63342/students/">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.5.0-rc.1/angular-animate.js"></script>
+    <meta name="viewport" content="width=device-width" />
+
+    <script src="app.js"></script>
+
+    <script src="services/routing.js"></script>
+    <script src="services/menuToggle.js"></script>
+
+    <script src="controllers/menuToggleCtrl.js"></script>
+    <script src="controllers/mainMenuCtrl.js"></script>
+</head>
+
+<body>
+<header ng-controller="MenuToggleCtrl">
+    <button class="menuLeft" type="button" ng-model="clicked" ng-click="menuToggle()">&#9776;</button>
+    <label id="pageTitle" class="pageTitle">Select item from list</label>
+    <button class="menuRight" type="button">&#8942;</button>
+</header>
+
+<main ng-view></main>
+
+<footer ng-controller="MenuToggleCtrl" ng-if="clicked">
+    <ul class="horizontal-style">
+        <li><button type="button">NO</button></li>
+        <li><button type="button">EXTRA</button></li>
+        <li><button type="button">YES</button></li>
+    </ul>
+</footer>
+
+</body>
+</html>
