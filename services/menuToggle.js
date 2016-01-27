@@ -6,6 +6,7 @@
             var TogglerFactory = {};
 
             TogglerFactory.menuToggle = function(){
+                console.log("alosh");
                 $rootScope.clicked = !$rootScope.clicked;
             }
 

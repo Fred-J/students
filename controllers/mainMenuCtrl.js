@@ -14,8 +14,5 @@
                 alert("http error");
             }
         )
-        $scope.mainMenuSelection = function (item) {
-            alert(item);
-        }
     }
 })();
