@@ -31,16 +31,17 @@ header {
     top: 0;
 }
 
-main {
-    position: relative;
+main, .mainMenu {
+    position: absolute;
     top: 2.5em;
-    z-index: -1;
 }
 
+main {
+    z-index: -2;
+}
 
 footer {
     position: fixed;
-    /*bottom: -3em;*/
     bottom: 0;
     width: 100%;
 }

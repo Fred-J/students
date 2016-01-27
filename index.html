@@ -26,6 +26,17 @@
     <button class="menuRight" type="button">&#8942;</button>
 </header>
 
+<section class="mainMenu" ng-controller="MainMenuCtrl" ng-if="!clicked">
+    <ul>
+        <li ng-repeat="item in menuItems">
+            <a href="#/{{item.name}}">
+                <image ng-src="images/{{item.image}}.png"></image>
+                {{item.name}}
+            </a>
+        </li>
+    </ul>
+</section>
+
 <main ng-view></main>
 
 <footer ng-controller="MenuToggleCtrl" ng-if="clicked">

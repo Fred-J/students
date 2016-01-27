@@ -14,14 +14,6 @@
                 alert("http error");
             }
         )
-
-        // different version to do the same but without error handling.
-        //$http.get('models/mainMenu.json').success(
-        //    function(data){
-        //        $scope.menuItems = data;
-        //    }
-        //)
-
         $scope.mainMenuSelection = function (item) {
             alert(item);
         }

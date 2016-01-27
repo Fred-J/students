@@ -6,11 +6,6 @@
 
     function routing ($routeProvider) {
         $routeProvider
-            .when('/menuItems', {
-            url: "/menuItems",
-            templateUrl: 'views/mainMenu.html',
-            controller: 'MainMenuCtrl'
-        })
             .when('/page1', {
             url: "/page1",
             templateUrl: 'views/page1.html',
@@ -21,8 +16,5 @@
                 templateUrl: 'views/page2.html',
                 controller: 'page2Ctrl'
             })
-            .otherwise({      //home page
-                redirectTo: '/menuItems'
-            });
     }
 })();
