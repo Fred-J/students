@@ -92,15 +92,12 @@ ul {
     list-style-type: none;
 }
 
-.mainMenu  li:first-child{
-    padding-top: 1em;
-}
-
-.mainMenu li {
-    padding-bottom: 1em;
-    font-size: 1.5em;
-}
-
 ul li img {
     vertical-align: middle;
+    padding-right: 0.25em;
+}
+
+a {
+    /*display: block;*/
+    padding: 1em 0em;
 }

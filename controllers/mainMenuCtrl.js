@@ -2,9 +2,9 @@
     'use strict';
     angular
         .module('appModule')
-        .controller('MainMenuCtrl', ['$scope', '$http', MainMenuCtrl]);
+        .controller('MainMenuCtrl', ['$scope', '$http', 'TogglerFactory',  MainMenuCtrl]);
 
-    function MainMenuCtrl($scope, $http) {
+    function MainMenuCtrl($scope, $http, Toggler) {
 
         $http.get('models/mainMenu.json').then(
             function (response) {
@@ -14,5 +14,10 @@
                 alert("http error");
             }
         )
+
+        $scope.itemClicked = function (item){
+            Toggler.menuToggle();
+        }
+
     }
 })();
