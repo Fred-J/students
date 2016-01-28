@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <base href="http://localhost:63342/students/">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
-    <script src="https://code.angularjs.org/1.5.0-rc.1/angular-animate.js"></script>
     <meta name="viewport" content="width=device-width" />
+
+    <base href="http://localhost:63342/students/">
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>-->
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
 
     <script src="app.js"></script>
 
@@ -44,7 +47,7 @@
 <footer ng-controller="MenuToggleCtrl" ng-if="clicked">
     <ul class="horizontal-style">
         <li><button type="button">NO</button></li>
-        <li><button type="button">EXTRA</button></li>
+        <li><button type="button" ng-if="!clicked">EXTRA</button></li>
         <li><button type="button">YES</button></li>
     </ul>
 </footer>

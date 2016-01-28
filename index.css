@@ -53,6 +53,8 @@ footer > button {
 }
 input {
     font-size: 1em;
+    padding: 0.25em;
+    margin: 0.25em;
     width: 100%;
 }
 
@@ -86,6 +88,7 @@ footer button {
     background-color: #dfdfdf;
     width: 70%;
     border-radius: 0 6px 10px 0;
+    z-index: -1;
 }
 
 ul {
@@ -98,6 +101,6 @@ ul li img {
 }
 
 a {
-    /*display: block;*/
+    display: block;
     padding: 1em 0em;
 }
